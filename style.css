@@ -1,0 +1,109 @@
+/*Global*/
+:root {
+    --orange: #e89725;
+    --black: #000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* container */
+.card {
+    box-shadow: 10px 10px 8px #292222;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    border-radius: 7%;
+    transition: .5s;
+    margin-top: 55px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* image */
+img {
+    border-radius: 50%;
+    width: 55%;
+    margin: 24px;
+    border: 7px solid var(--orange);
+}
+
+.title {
+    color: var(--orange);
+    font-weight: 600;
+    margin-top: -13px;
+}
+
+p span {
+    font-size: 18px;
+    color: white;
+}
+
+.info {
+    color: var(--orange);
+    font-weight: 600;
+    text-align: center;
+    line-height: 13px;
+
+}
+
+button {
+    border: none;
+    padding: 8px;
+    background-color: var(--orange);
+    color: var(--black);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 22px;
+}
+
+a i {
+    margin: 0 5px 0 5px;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+.button {
+    margin: 25px;
+    width: 232px;
+    border-radius: 10px;
+}
+
+.icon {
+    margin-top: 23px;
+}
+
+@media(max-width:768px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
